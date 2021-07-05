@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FRESH VEGETABLES</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function stickyMenu {} {
+      var sticky = document.getElementById('sticky');
+      if (window.pageYOffset > 220) {
+        sticky.classList.add('sticky');
+
+      } else {
+        sticky.classList.remove('sticky');
+
+      }
+    }
+    window.onscroll = function() {
+      stickyMenu();
+    }
+  </script>
+</head>
+
+<body>
+  <div class="parallax">
+    <div class="page-title">Fresh Vegetables</div>
+
+  </div>
+
+  <div class="menu" id="sticky">
+    <ul class="menu-ul">
+      <a href="#" class="a-menu">
+        <li>Home</li>
+      </a>
+      <a href="#Deals" class="a-menu">
+        <li>Deals</li>
+      </a>
+      <a href="#Vegetables" class="a-menu">
+        <li>Vegetables</li>
+      </a>
+      <a href="#Fruits" class="a-menu">
+        <li>Fruits</li>
+      </a>
+      <a href="#Meat" class="a-menu">
+        <li>Meat</li>
+      </a>
+      <a href="#" class="a-menu">
+        <li>Cart</li>
+      </a>
+    </ul>
+    <div class="search-box">
+      <form>
+        <input type="text" placeholder="Search..." name="search" class="search-input" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+
+      </form>
+
+    </div>
+
+  </div>
+  <!--Home -->
+  <div class="container">
+    <a href="#Vegetables">
+      <div class="categories">
+        <img src="img/vegetables.jpg" alt="" class="item-image" />
+        <div class="image-title">Vegetables</div>
+      </div>
+    </a>
+
+    <a href="#Fruits">
+      <div class="categories">
+        <img src="img/fruits.jpg" alt="" class="item-image" />
+        <div class="image-title">Fruits</div>
+      </div>
+    </a>
+
+    <a href="#meat">
+      <div class="categories">
+        <img src="img/meat.jpg" alt="" class="item-image" />
+        <div class="image-title">Meat</div>
+      </div>
+    </a>
+
+    <a href="#Deals">
+      <div class="categories">
+        <img src="img/deals.jpg" alt="" class="item-image" />
+        <div class="image-title">Deals</div>
+      </div>
+    </a>
+
+  </div>
+  <!--Deals-->
+  <div class="deals-container" id="Deals">
+
+    <div class="parallax">
+      <div class="title">DEALS</div>
+
+    </div>
+    <div class="deal">
+      Save Rs 200 on min-purchase of Rs 600 on vegetables<br>
+      <button class="coupon-btn">Add coupon</button>
+
+    </div>
+    <div class="deal">
+      Save Rs 99 on min-purchase of Rs 300 on fruits<br>
+      <button class="coupon-btn">Add coupon</button>
+
+    </div>
+    <div class="deal">
+      Save Rs 65 on min-purchase of Rs 150 on meat<br>
+      <button class="coupon-btn">Add coupon</button>
+
+    </div>
+  </div>
+  <!--Veg-->
+  <div class="veg-contaner" id="Vegetables">
+
+    <div class="parallax">
+      <div class="title">VEGETABLES</div>
+
+    </div>
+    <div class="items">
+      <div class="images">
+        <img src="img/corn.jpg" alt="" class="item-image-size" />
+
+
+      </div>
+      <div class="description">
+        <b>Corn</b><br/>
+        <div class="item-select">
+          Price:Rs.200 per pc
+
+
+        </div>
+        <label>Qty</label>
+        <select class="item-select">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+
+        </select><br />
+        <button class="buynow-btn">Buy Now</button>
+      </div>
+
+   </div>
+
+   <div class="items">
+     <div class="images">
+       <img src="img/carrot.jpg" alt="" class="item-image-size" />
+
+
+     </div>
+     <div class="description">
+       <b>Carrot</b><br/>
+       <div class="item-select">
+         Price:Rs.50 per kg
+
+
+       </div>
+       <label>Qty</label>
+       <select class="item-select">
+         <option>1 kg</option>
+         <option>2 kg</option>
+         <option>3 kg</option>
+         <option>4 kg</option>
+         <option>5 kg</option>
+
+       </select><br />
+       <button class="buynow-btn">Buy Now</button>
+     </div>
+
+  </div>
+
+  <div class="items">
+    <div class="images">
+      <img src="img/bell.jpg" alt="" class="item-image-size" />
+
+
+    </div>
+    <div class="description">
+      <b>Bell Pepper</b><br/>
+      <div class="item-select">
+        Price:Rs.50 per kg
+
+
+      </div>
+      <label>Qty</label>
+      <select class="item-select">
+        <option>1 kg</option>
+        <option>2 kg</option>
+        <option>3 kg</option>
+        <option>4 kg</option>
+        <option>5 kg</option>
+
+      </select><br />
+      <button class="buynow-btn">Buy Now</button>
+    </div>
+
+ </div>
+
+ <div class="items">
+   <div class="images">
+     <img src="img/tomato.jpg" alt="" class="item-image-size" />
+
+
+   </div>
+   <div class="description">
+     <b>Tomato</b><br/>
+     <div class="item-select">
+       Price:Rs.65 per kg
+
+
+     </div>
+     <label>Qty</label>
+     <select class="item-select">
+       <option>1 kg</option>
+       <option>2 kg</option>
+       <option>3 kg</option>
+       <option>4 kg</option>
+       <option>5 kg</option>
+
+     </select><br />
+     <button class="buynow-btn">Buy Now</button>
+   </div>
+
+</div>
+   </div>
+
+<!--Fruits-->
+
+<div class="veg-contaner" id="Fruits">
+
+  <div class="parallax">
+    <div class="title">FRUITS</div>
+
+  </div>
+  <div class="items">
+    <div class="images">
+      <img src="img/banana.jpg" alt="" class="item-image-size" />
+
+
+    </div>
+    <div class="description">
+      <b>Corn</b><br/>
+      <div class="item-select">
+        Price:Rs.20 per pc
+
+
+      </div>
+      <label>Qty</label>
+      <select class="item-select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+
+      </select><br />
+      <button class="buynow-btn">Buy Now</button>
+    </div>
+
+ </div>
+
+ <div class="items">
+   <div class="images">
+     <img src="img/apple.jpg" alt="" class="item-image-size" />
+
+
+   </div>
+   <div class="description">
+     <b>Apple</b><br/>
+     <div class="item-select">
+       Price:Rs.350 per kg
+
+
+     </div>
+     <label>Qty</label>
+     <select class="item-select">
+       <option>1 kg </option>
+       <option>2 kg</option>
+       <option>3 kg</option>
+       <option>4 kg </option>
+       <option>5 kg </option>
+
+     </select><br />
+     <button class="buynow-btn">Buy Now</button>
+   </div>
+
+</div>
+
+<div class="items">
+  <div class="images">
+    <img src="img/grapes.jpg" alt="" class="item-image-size" />
+
+
+  </div>
+  <div class="description">
+    <b>Grape</b><br/>
+    <div class="item-select">
+      Price:Rs.100 per kg
+
+
+    </div>
+    <label>Qty</label>
+    <select class="item-select">
+      <option>1 kg</option>
+      <option>2 kg</option>
+      <option>3 kg</option>
+      <option>4 kg</option>
+      <option>5 kg</option>
+
+    </select><br />
+    <button class="buynow-btn">Buy Now</button>
+  </div>
+
+</div>
+
+<div class="items">
+ <div class="images">
+   <img src="img/greenapple.jpg" alt="" class="item-image-size" />
+
+
+ </div>
+ <div class="description">
+   <b>Green Apple</b><br/>
+   <div class="item-select">
+     Price:Rs.65 per kg
+
+
+   </div>
+   <label>Qty</label>
+   <select class="item-select">
+     <option>1 kg</option>
+     <option>2 kg</option>
+     <option>3 kg</option>
+     <option>4 kg</option>
+     <option>5 kg</option>
+
+   </select><br />
+   <button class="buynow-btn">Buy Now</button>
+ </div>
+
+</div>
+ </div>
+<!--Footer-->
+<div class="parallax1">
+  <div class="footer">
+     <div class="quick-links">
+       <div>Locations</div>
+       <ul>
+
+         <li><a href="" class="a-links"></a>Adresss</li>
+         <li><a href="" class="a-links"></a>Adresss</li>
+       </ul>
+
+       </div>
+       <div class="quick-links">
+         <div>Career</div>
+         <ul>
+
+           <li><a href="" class="a-links"></a>Home Delivery</li>
+           <li><a href="" class="a-links"></a>Packing Staff</li>
+         </ul>
+
+         </div>
+         <div class="quick-links">
+           <div>Quick Links</div>
+           <ul>
+
+             <li><a href="" class="a-links"></a>Contact Us</li>
+             <li><a href="" class="a-links"></a>About Us</li>
+           </ul>
+
+           </div>
+     </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
